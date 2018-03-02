@@ -158,6 +158,22 @@
     },
     {
       "pair": [
+        "USD",
+        "EOS"
+      ],
+      "prefixed": [
+        "USD",
+        "EOS"
+      ],
+      "book": "EOSUSD",
+      "minimalOrder": {
+        "amount": "3.0",
+        "unit": "asset"
+      },
+      "precision": 4
+    },
+    {
+      "pair": [
         "ETH",
         "GNO"
       ],
