@@ -126,6 +126,22 @@
     },
     {
       "pair": [
+        "USD",
+        "EOS"
+      ],
+      "prefixed": [
+        "ZUSD",
+        "EOS"
+      ],
+      "book": "EOSUSD",
+      "minimalOrder": {
+        "amount": "3.0",
+        "unit": "asset"
+      },
+      "precision": 6
+    },
+    {
+      "pair": [
         "ETH",
         "EOS"
       ],
