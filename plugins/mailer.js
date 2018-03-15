@@ -101,20 +101,18 @@ Mailer.prototype.processAdvice = function(advice) {
 
   if (advice.recommendation == "soft" && mailConfig.muteSoft) return;
 
-  var text = [
-    'Gekko is watching ',
-    config.watch.exchange,
-    ' and has detected a new trend, advice is to go ',
-    advice.recommendation,
-    '.\n\nThe current ',
-    config.watch.asset,
-    ' price is ',
-    config.watch.currency,
-    ' ',
-    this.price
-  ].join('');
+  
+   var text = [
+        config.watch.asset,
+        '-',
+        config.watch.currency,
+        ' go ',
+        advice.recommendation,
+        ' @ ',
+        this.price
+    ].join('');
 
-  var subject = 'New advice: go ' + advice.recommendation;
+  var subject = config.watch.exchange + ' ' + config.watch.asset + '-' + config.watch.currency + ' has New advice ';
 
   this.mail(subject, text);
 };
